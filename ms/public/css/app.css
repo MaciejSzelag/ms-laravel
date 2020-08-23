@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css2?family=Overpass:wght@200&family=Raleway+Dots&display=swap);* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.nav-wrap {
+  width: 100%;
+  height: 60px;
+  font-size: 1.6rem;
+}
+
+.nav-wrap .container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-wrap .container .btn-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  background-color: #99784d;
+  border-bottom-right-radius: 30px;
+}
+
+.nav-wrap .container .m-nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 10;
+}
+
+.nav-wrap .container .m-nav-container .nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+}
+
+.nav-wrap .container .m-nav-container .nav-items .nav-item {
+  margin: 0 10px;
+}
+
+.nav-wrap .container .m-nav-container .nav-items .nav-item a {
+  display: flex;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-family: "Raleway Dots", cursive;
+  transition: 0.3s linear;
+  overflow: hidden;
+}
+
+.nav-wrap .container .m-nav-container .main-m {
+  justify-content: flex-end;
+  flex-grow: 4;
+  padding-right: 20px;
+}
+
+.nav-wrap .container .m-nav-container .main-m a {
+  position: relative;
+  color: #4e2a00;
+}
+
+.nav-wrap .container .m-nav-container .main-m a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  height: 1px;
+  background-color: #99784d;
+  transition: 0.4s ease-in-out;
+}
+
+.nav-wrap .container .m-nav-container .main-m a:hover::before {
+  left: 0;
+}
+
+.nav-wrap .container .m-nav-container .log-m {
+  flex-grow: 0;
+  background-color: #99784d;
+  border-bottom-left-radius: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  transition: 0.6s ease-in-out;
+}
+
+.nav-wrap .container .m-nav-container .log-m a {
+  color: whitesmoke;
+}
+
+.nav-wrap .container .m-nav-container .log-m a:hover {
+  color: #e07f00;
+}
+
+.nav-wrap .container .m-nav-container .log-m:hover {
+  flex-grow: 1;
+  padding-left: 0;
+  padding-right: 0;
+}
+

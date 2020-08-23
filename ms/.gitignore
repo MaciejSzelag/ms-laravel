@@ -1,0 +1,27 @@
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+
+.env.backup
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/resources/js/app.js
+### PhpStorm IDE ###
+.idea/
+*.idea
+*.iml
+
+### Laravel ###
+vendor/
+node_modules/
+bootstrap/cache/
+storage/
+public/build/
+.env.*.php
+.env.php
+.env
