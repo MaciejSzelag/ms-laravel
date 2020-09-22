@@ -6,4 +6,52 @@
 
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::selection {
+    background: rgb(72, 0, 131);
+    color: white
+}
+
+main {
+    display: flex;
+    width: auto;
+
+    .section-main-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+
+        margin: 0;
+
+
+        .content-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+
+            .sections-wrap {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+                max-width: 1920px;
+                min-height: 100vh;
+
+                // margin-top: $navHeight;
+                background-color: rgb(255, 255, 255);
+            }
+        }
+    }
+
 }

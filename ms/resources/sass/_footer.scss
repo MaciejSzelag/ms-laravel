@@ -1,0 +1,261 @@
+footer {
+    width: 100%;
+    min-height: 600px;
+    height: auto;
+    border-top: 1px solid rgba(83, 83, 83, 0.425);
+    background-color: rgba(134, 110, 148, 0.863);
+    font-family: 'Overpass', sans-serif;
+    overflow: hidden;
+
+    .wrap-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+
+        .box-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            height: auto;
+            background-image: url(/img/mountains-bg.jpg);
+            background-size: cover;
+            background-position: center;
+
+
+            .cover-bg-color-op-footer {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(134, 110, 148, 0.918);
+                z-index: 0;
+
+
+
+            }
+
+            .footer-box {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+                height: auto;
+                min-height: 500px;
+                z-index: 1;
+
+                .contact-form-container {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: space-evenly;
+                    flex-direction: column;
+                    width: 100%;
+                    height: 100%;
+
+
+
+                    .h-1 {
+                        margin: 40px 0 10px;
+                        color: white;
+                        text-align: center;
+                        font-size: 2.5rem;
+                    }
+
+                    .alert {
+                        position: fixed;
+                        top: 50%;
+                        left: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transform: translate(-50%, -50%);
+                        width: 300px;
+                        height: 50px;
+                    }
+
+                    .contact-form {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 100%;
+
+
+                        form {
+                            @extend .contact-form;
+                            flex-direction: column;
+
+                            label {
+                                color: white;
+                                font-size: 1.3rem;
+                                margin-bottom: 10px;
+                                // background-color: red;
+
+                            }
+
+                            input,
+                            textarea {
+                                margin-bottom: 10px;
+                                background-color: rgba(201, 109, 255, 0.411);
+                                border: none;
+                                border-bottom: 1px solid $blue;
+                                padding: 5px;
+                                padding-left: 10px;
+                                font-family: 'Overpass', sans-serif;
+                                color: white;
+                            }
+
+                            input {
+                                width: 40%;
+                            }
+
+                            textarea {
+                                width: 50%;
+                                height: 200px;
+                            }
+
+                            input::placeholder,
+                            textarea::placeholder {
+                                color: rgba(255, 255, 255, 0.404);
+                                font-size: 1rem;
+                            }
+
+                            .btn-send {
+                                width: 20%;
+                                // border-radius: 10px;
+                                background-color: rgba(141, 49, 216, 0.863);
+                                border: none;
+                                transition: .3s linear;
+                                box-shadow: -1px -1px 2px 1px rgba(255, 255, 255, 0.377);
+                            }
+
+                            .btn-send:hover {
+                                box-shadow: -1px -1px 2px 1px $l_purple;
+                                background-color: rgba(72, 0, 131, 0.295);
+                            }
+
+
+
+
+                        }
+
+                    }
+                }
+
+                .footer-small-box {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 50%;
+                    color: white;
+
+
+                    ul {
+
+                        padding: 20px 10px;
+
+                        li {
+                            margin: 10px 0;
+                            font-size: 1.5rem;
+                            list-style: none;
+
+                            a {
+                                color: white;
+                                text-decoration: none;
+
+                                .font-awesome {
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                    }
+
+                    .ul-row {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        li {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 0 30px;
+                            border-bottom: 1px solid rgba(255, 255, 255, 0.575);
+                            border-top: 1px solid rgba(255, 255, 255, 0);
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            transition: .3s linear;
+
+                            .scial-icon {
+                                display: flex;
+                                font-size: 3rem;
+                                transition: .3s linear;
+
+                            }
+
+                            .scial-icon:hover {
+                                transform: rotate(-180deg);
+                            }
+
+                            .fb:hover {
+                                color: rgb(71, 71, 255)
+                            }
+
+                            .inst:hover {
+                                color: rgb(221, 0, 111)
+                            }
+
+                            .twit:hover {
+                                color: rgb(0, 158, 250)
+                            }
+
+                        }
+
+                        li:hover {
+                            transform: rotate(180deg);
+                            border-top: 1px solid rgba(255, 255, 255, 0.575);
+                        }
+                    }
+
+                }
+
+
+            }
+
+            .grey {
+                background-color: grey;
+            }
+
+        }
+
+        .rights-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 80px;
+            border-top: 1px solid rgba(255, 255, 255, 0.144);
+            color: white;
+            background-color: $mainPurple;
+
+            p {
+                font-size: 1.4rem;
+
+                a {
+                    color: whitesmoke;
+                }
+            }
+        }
+    }
+
+}
